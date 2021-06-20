@@ -19,4 +19,6 @@
     <string name="shr_bottoms_label">Bottoms</string>
     <string name="shr_dresses_label">Dresses</string>
     <string name="shr_account_label">My Account</string>
+    <string name="shr_username_helper_text">Username helper text</string>
+    <string name="shr_password_helper_text">Password helper text</string>
 </resources>
