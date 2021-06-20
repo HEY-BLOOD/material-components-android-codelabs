@@ -1,6 +1,9 @@
 package com.google.codelabs.mdc.java.shrine;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
@@ -38,5 +41,11 @@ public class MainActivity extends AppCompatActivity implements NavigationHost {
         }
 
         transaction.commit();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.shr_toolbar_menu, menu);
+        return true;
     }
 }
