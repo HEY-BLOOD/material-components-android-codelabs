@@ -3,10 +3,10 @@ package com.google.codelabs.mdc.java.shrine;
 import android.view.View;
 import android.widget.TextView;
 
-import com.android.volley.toolbox.NetworkImageView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.android.volley.toolbox.NetworkImageView;
 
 public class ProductCardViewHolder extends RecyclerView.ViewHolder {
 
