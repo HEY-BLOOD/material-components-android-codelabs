@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AccelerateDecelerateInterpolator;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -67,6 +68,11 @@ public class ProductGridFragment extends Fragment {
         if (activity != null) {
             activity.setSupportActionBar(toolbar);
         }
+
+        toolbar.setNavigationOnClickListener(new NavigationIconClickListener(
+                getContext(),
+                view.findViewById(R.id.product_grid),
+                new AccelerateDecelerateInterpolator()));
     }
 
     @Override
